@@ -1,0 +1,59 @@
+Source: jieba
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders:
+ Boyuan Yang <073plan@gmail.com>,
+Build-Depends:
+ python-all (>= 2.6.6-3~),
+ python3-all (>= 3.2),
+ debhelper (>= 10~),
+ dh-python,
+Standards-Version: 3.9.8
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.3
+Homepage: https://github.com/fxsjy/jieba
+Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/jieba.git
+Vcs-Browser: https://anonscm.debian.org/git/python-modules/packages/jieba.git
+
+Package: python-jieba
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python:Depends},
+Description: Chinese text segmentation library, python2 version
+ Jieba (Chinese for "to stutter") is a Chinese text segmentation module.
+ .
+ It supports three types of segmentation mode:
+ .
+ 1: Accurate Mode, which attempts to cut the sentence into the most
+ accurate segmentations, which is suitable for text analysis.
+ 2: Full mode, which gets all the possible words from the sentence.
+ Fast but not accurate.
+ 3: Search Engine Mode, based on the Accurate Mode. It attempts to
+ cut long words into several short words, which can raise the recall
+ rate. Suitable for search engines.
+ .
+ Jieba supports both Simplified Chinese and Traditional Chinese with
+ customized dictionaries.
+
+Package: python3-jieba
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Chinese text segmentation library, python3 version
+ Jieba (Chinese for "to stutter") is a Chinese text segmentation module.
+ .
+ It supports three types of segmentation mode:
+ .
+ 1: Accurate Mode, which attempts to cut the sentence into the most
+ accurate segmentations, which is suitable for text analysis.
+ 2: Full mode, which gets all the possible words from the sentence.
+ Fast but not accurate.
+ 3: Search Engine Mode, based on the Accurate Mode. It attempts to
+ cut long words into several short words, which can raise the recall
+ rate. Suitable for search engines.
+ .
+ Jieba supports both Simplified Chinese and Traditional Chinese with
+ customized dictionaries.
